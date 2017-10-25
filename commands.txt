@@ -1,0 +1,36 @@
+val listOfNumber : List[Int] = List(1,2,3,4,5,6,7,8,9,10);
+listOfNumber: List[Int] = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                                             ^
+
+1. Sum Of all elements in list:
+
+val sumOfElements = listOfNumber.sum
+sumOfElements: Int = 55
+
+2. Number of elements in the list:
+
+val noOfElements = listOfNumber.length
+noOfElements: Int = 10
+
+3. Average of the elements in the List:
+
+val average= sumOfElements/ noOfElements
+average: Int = 5
+
+4. All even Numbers in the List:
+
+val evenNumbers = listOfNumber.filter(x => x%2 ==0)
+evenNumbers: List[Int] = List(2, 4, 6, 8, 10)
+
+5. Sum of all even Numbers in the List:
+
+val sumOfEvenNumbers = evenNumbers.sum
+sumOfEvenNumbers: Int = 30
+
+6. Numbers divisible both by 5 and 3:
+
+val divisibleNumbers = listOfNumber.filter(x=> (x%5 == 0) && (x%3 == 0))
+divisibleNumbers: List[Int] = List()
+
+divisibleNumbers.length
+res0: Int = 0
